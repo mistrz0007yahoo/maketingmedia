@@ -5,6 +5,7 @@
 /// <reference path="menu.d.ts" />
 /// <reference path="skrolAnimacje.d.ts" />
 declare var canvas: any, stage: any, exportRoot: any;
+declare var klatka: number;
 declare var klasaRozmiar: wielkosc;
 declare var animjezyka: any;
 declare var polozenia: Array<any>;
@@ -21,6 +22,11 @@ declare var trwaAnimacjaintro: boolean;
 declare var wytrzalgotowy: boolean;
 declare var brakKapelusza: boolean;
 declare var menU: menu;
+declare var renderMyszka: any;
+declare var pozycjeKlatek: number[][];
+declare var szybkoscMyszki: number;
+declare var poczekaj: number;
+declare var okresK: number;
 declare function zmianawielkosci(): void;
 declare function init(): void;
 declare function handleFileLoad(evt: any): void;
@@ -31,6 +37,7 @@ declare function doDolu(): void;
 declare function schowajKontaktTeraz(): void;
 declare function aktywujListener(): void;
 declare function pokazKontakt(): void;
+declare function renderowanieMyszy(): void;
 declare function pokazczerwony(): void;
 declare function pokazczarny(): void;
 declare function pokazczeroneTlo(): void;

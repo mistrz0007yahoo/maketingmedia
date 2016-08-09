@@ -32,6 +32,9 @@ var menu = (function () {
             TweenLite.to($(".menuboczne"), 0.8, { x: 0, onComplete: koniecAnimacjimenu });
         }
     };
+    menu.prototype.pokazMenu = function () {
+        $(".przyciskmenu").css("visibility", "visible");
+    };
     return menu;
 }());
 function koniecAnimacjimenu() {

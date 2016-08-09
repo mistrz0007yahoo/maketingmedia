@@ -93,6 +93,7 @@ color:#e30613;
     background-image: url(../images/logoboczne.png);
     background-repeat: no-repeat;
     background-position: 25px 110px;
+    visibility: hidden;
  
 }
 

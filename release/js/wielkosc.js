@@ -4,9 +4,11 @@ var szerokosc = 1900;
 var skala = 1;
 var wysokosc = 800;
 var skalaWysokosci = 1;
+var proporcje = 1;
 var wielkosc = (function () {
     function wielkosc(zmienWielkosc) {
         this.zmienWielkosc = zmienWielkosc;
+        this.skalaWys = 1;
         TweenLite.set('.stronka', { transformOrigin: "0% 0%" });
         TweenLite.set('#canvas', { transformOrigin: "0% 0%" });
         TweenLite.set('.logozaslepka', { transformOrigin: "0% 0%" });
@@ -17,11 +19,13 @@ var wielkosc = (function () {
         TweenLite.set('.koperta', { transformOrigin: "0% 100%" });
         TweenLite.set('.przyciskmenu', { transformOrigin: "100% 50%" });
         TweenLite.set('.menulista', { transformOrigin: "0% 50%" });
+        // TweenLite.set('.myszka', {transformOrigin:"50% 0%"}); 
         function dostosujRozmiar() {
             szerokosc = parseInt(window.innerWidth);
             wysokosc = parseInt(window.innerHeight);
             skala = szerokosc / 1920;
             skalaWysokosci = wysokosc / 1080;
+            proporcje = wysokosc / szerokosc;
             // TweenMax.killAll($(".stronka"));
             TweenLite.to($(".strona1"), 0, { scale: skala, y: 0 });
             TweenLite.to($(".strona2"), 0, { scale: skala, y: skala * 1080 });
@@ -29,6 +33,7 @@ var wielkosc = (function () {
             TweenLite.to($(".strona4"), 0, { scale: skala, y: wysokosc });
             TweenLite.to($(".strona5"), 0, { scale: skala, y: wysokosc });
             TweenLite.to($(".strona6"), 0, { scale: skala, y: wysokosc + skala * 1080 });
+            //TweenLite.to($(".myszka"),0,{scale:skala,y:wysokosc - skala * 250}); 
             var odleglosc = (skalaWysokosci) * 1200;
             console.log("odleglosc: " + odleglosc);
             // $(".strona2").css("top",1080 * skala + "px");
@@ -48,6 +53,9 @@ var wielkosc = (function () {
         dostosujRozmiar();
         $(window).resize(dostosujRozmiar);
     }
+    wielkosc.prototype.pobierzSkaleWys = function () {
+        return proporcje;
+    };
     wielkosc.prototype.pobierzSkaleNormal = function () {
         return 1920 / szerokosc;
     };

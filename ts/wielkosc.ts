@@ -4,12 +4,13 @@ var szerokosc:number = 1900;
 var skala = 1;
 var wysokosc = 800;
 var skalaWysokosci = 1;
+var proporcje = 1;
 
 
 
 class wielkosc{
     
-    
+skalaWys:number = 1;
     constructor(public zmienWielkosc)
     {
         TweenLite.set('.stronka', {transformOrigin:"0% 0%"}); 
@@ -22,6 +23,7 @@ class wielkosc{
         TweenLite.set('.koperta', {transformOrigin:"0% 100%"}); 
         TweenLite.set('.przyciskmenu', {transformOrigin:"100% 50%"}); 
         TweenLite.set('.menulista', {transformOrigin:"0% 50%"}); 
+        // TweenLite.set('.myszka', {transformOrigin:"50% 0%"}); 
         
         function dostosujRozmiar()
     {
@@ -31,6 +33,7 @@ class wielkosc{
     
         skala = szerokosc/1920;
        skalaWysokosci= wysokosc/1080;
+            proporcje = wysokosc/szerokosc;
       
  
    // TweenMax.killAll($(".stronka"));
@@ -40,6 +43,8 @@ class wielkosc{
           TweenLite.to($(".strona4"),0,{scale:skala,y:wysokosc}); 
           TweenLite.to($(".strona5"),0,{scale:skala,y:wysokosc}); 
              TweenLite.to($(".strona6"),0,{scale:skala,y:wysokosc +skala * 1080});
+            
+            //TweenLite.to($(".myszka"),0,{scale:skala,y:wysokosc - skala * 250}); 
         
         
         
@@ -74,6 +79,10 @@ class wielkosc{
         
         $(window).resize(dostosujRozmiar);
     }
+    pobierzSkaleWys():number
+{
+    return proporcje;
+}
 pobierzSkaleNormal():Number
 {
     return 1920/szerokosc;

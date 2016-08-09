@@ -12,7 +12,7 @@
  var canvas, stage, exportRoot;
  
  
-
+var klatka = -1;
 var klasaRozmiar:wielkosc;
   var animjezyka;
 
@@ -31,6 +31,11 @@ var piatastrona:strona5;
  var wytrzalgotowy = true;
 var brakKapelusza = true;
 var menU:menu;
+ var renderMyszka;
+ var pozycjeKlatek = [[114,0],[0,0],[0,187],[228,0],[342,0],[228,187],[114,187],[342,187]];
+ var szybkoscMyszki = 30;
+ var poczekaj = true;
+ var okresK = 0;
 
     $(document).ready(function(e)
         {
@@ -158,6 +163,7 @@ $(".str1").mousedown(function(e){
         animjezyka.add(animJ3,"-=1");
     
     aktywujListener();
+    menU.pokazMenu();
 }
     function kliknietomenuTeraz(numKKmenu:number)
     {
@@ -245,6 +251,16 @@ else{
         animjezyka.restart();
         animjezyka.pause();
         
+        if(klasaRozmiar.pobierzSkaleWys() >0.48)
+            {
+          $(".myszka").css("display","block");
+             $(".myszka").css("visibility","visible");
+    renderMyszka = setInterval(function()
+        {
+    renderowanieMyszy();
+        },szybkoscMyszki);
+            }
+        
     }
  
     function pokazKontakt()
@@ -267,7 +283,47 @@ else{
         
     }
     
+    function renderowanieMyszy()
+    {
+            klatka++;
+        
+        okresK++
+        
+        
+        if(poczekaj)
+                    {
+                if(okresK>21)
+                {
+                        poczekaj = false;
+                    okresK = 0;
+                }
+                    }
+else{
+    if(okresK>7)
+                {
+    poczekaj = true;
+        okresK = 0;
+    }
+}
+        
+        
+            if(klatka>7)
+            {
+                
+                klatka = 0;
+                  
+                    
+            }
+    console.log(klatka);
+        var pOz = "-" + pozycjeKlatek[klatka][0] + "px -" + pozycjeKlatek[klatka][1] + "px";
+    console.log("poz" + pOz);
+      
  
+            if(poczekaj)
+            {
+    $(".myszka").css("background-position",pOz);
+            }
+    }
     function pokazczerwony()
     {
        // $(".animacjapocztkowa").css("display","block");
@@ -342,7 +398,8 @@ else{
                    
                     if(trwaAnimacjaintro && pageYOffset>0)
                     {
-                        
+    clearInterval(renderMyszka);
+    $(".myszka").css("display","none");
     exportRoot.zacznijPowiekszac();
      trwaAnimacjaintro = false;
                         $(".str2").css("background-image","url(../images/strzalka_czerwona_d.png)");
@@ -352,7 +409,15 @@ else{
                     }
     else if(trwaAnimacjaintro == false && pageYOffset<=1)
     {
-        
+            if(klasaRozmiar.pobierzSkaleWys() >0.48)
+            {
+          $(".myszka").css("display","block");
+                
+                  renderMyszka = setInterval(function()
+        {
+    renderowanieMyszy();
+        },szybkoscMyszki);
+            }
          exportRoot.odnowa();
         trwaAnimacjaintro = true;
     pokazAnimacjeDolnejStrzalki();

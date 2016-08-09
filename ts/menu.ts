@@ -48,6 +48,14 @@ zawartosc += '<div class="bocznyprzycisk" id="mmB' + i +'">' +menuboczbe[i] +'</
         }.bind(this))
     }
     
+    
+    pokazMenu()
+    {
+    $(".przyciskmenu").css("visibility","visible");
+       
+  
+    }
+    
    
    
 }

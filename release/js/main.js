@@ -7,6 +7,7 @@
 ///<reference path='../lib/jquery.d.ts'/>
 ///<reference path='../lib/greensock.d.ts'/>
 var canvas, stage, exportRoot;
+var klatka = -1;
 var klasaRozmiar;
 var animjezyka;
 var polozenia = new Array();
@@ -23,6 +24,11 @@ var trwaAnimacjaintro = true;
 var wytrzalgotowy = true;
 var brakKapelusza = true;
 var menU;
+var renderMyszka;
+var pozycjeKlatek = [[114, 0], [0, 0], [0, 187], [228, 0], [342, 0], [228, 187], [114, 187], [342, 187]];
+var szybkoscMyszki = 30;
+var poczekaj = true;
+var okresK = 0;
 $(document).ready(function (e) {
     menU = new menu(kliknietomenuTeraz);
     klasaRozmiar = new wielkosc(zmianawielkosci);
@@ -112,6 +118,7 @@ function handleComplete(evt) {
     animjezyka.add(animJ2);
     animjezyka.add(animJ3, "-=1");
     aktywujListener();
+    menU.pokazMenu();
 }
 function kliknietomenuTeraz(numKKmenu) {
     if (numKKmenu == 6) {
@@ -170,6 +177,13 @@ function aktywujListener() {
     wytrzalgotowy = true;
     animjezyka.restart();
     animjezyka.pause();
+    if (klasaRozmiar.pobierzSkaleWys() > 0.48) {
+        $(".myszka").css("display", "block");
+        $(".myszka").css("visibility", "visible");
+        renderMyszka = setInterval(function () {
+            renderowanieMyszy();
+        }, szybkoscMyszki);
+    }
 }
 function pokazKontakt() {
     console.log("kontakt");
@@ -184,6 +198,31 @@ function pokazKontakt() {
         TweenLite.to($("#pro" + i), 0.8, { y: wysokosc * kierRuchu, delay: 0.1 * i, ease: Back.easeOut });
     }
     TweenLite.to($(".tytul_kontakt"), 0.8, { y: 200 * (window.innerHeight / 1080), delay: 0.5, ease: Back.easeOut });
+}
+function renderowanieMyszy() {
+    klatka++;
+    okresK++;
+    if (poczekaj) {
+        if (okresK > 21) {
+            poczekaj = false;
+            okresK = 0;
+        }
+    }
+    else {
+        if (okresK > 7) {
+            poczekaj = true;
+            okresK = 0;
+        }
+    }
+    if (klatka > 7) {
+        klatka = 0;
+    }
+    console.log(klatka);
+    var pOz = "-" + pozycjeKlatek[klatka][0] + "px -" + pozycjeKlatek[klatka][1] + "px";
+    console.log("poz" + pOz);
+    if (poczekaj) {
+        $(".myszka").css("background-position", pOz);
+    }
 }
 function pokazczerwony() {
     // $(".animacjapocztkowa").css("display","block");
@@ -231,6 +270,8 @@ function przewijanie(e) {
             dzielnik = 10;
         }
         if (trwaAnimacjaintro && pageYOffset > 0) {
+            clearInterval(renderMyszka);
+            $(".myszka").css("display", "none");
             exportRoot.zacznijPowiekszac();
             trwaAnimacjaintro = false;
             $(".str2").css("background-image", "url(../images/strzalka_czerwona_d.png)");
@@ -238,6 +279,12 @@ function przewijanie(e) {
             TweenLite.to($(".str2"), 0, { alpha: 1 });
         }
         else if (trwaAnimacjaintro == false && pageYOffset <= 1) {
+            if (klasaRozmiar.pobierzSkaleWys() > 0.48) {
+                $(".myszka").css("display", "block");
+                renderMyszka = setInterval(function () {
+                    renderowanieMyszy();
+                }, szybkoscMyszki);
+            }
             exportRoot.odnowa();
             trwaAnimacjaintro = true;
             pokazAnimacjeDolnejStrzalki();
