@@ -1,0 +1,113 @@
+.opisikony{
+    width: 376px;
+  
+  
+ 
+  
+    font-size: 13px;
+    position: relative;
+    height: 400px;
+   
+    vertical-align: top;
+    margin-right: 20px;
+    display:inline-block;
+    font-weight: bold;
+    color: black;
+    
+}
+.tloikoTo{
+      opacity: 0.8;
+     width: 376px;
+    height: 400px;
+       background-color: white;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+   
+    
+}
+.obrazek_skrol
+{
+      width: 376px;
+    height: 400px;
+    
+    position: absolute;
+    top: 0px;
+    left: 0px;
+       background-position:0px 140px;
+      background-repeat: no-repeat;
+}
+.bialydodatek
+{
+  
+    background-color: white;
+    
+    
+    font-size: 13px;
+    font-weight: bold;
+    position: absolute;
+    top: 0px;
+    left: 376px;
+    height: 400px;
+    width: 376px;
+    
+}
+.opisBialy{
+  position: relative;
+    font-weight: normal;
+    font-size: 20px;
+    overflow-y: auto;
+    height: 341px;
+    top: 33px;
+    width: 330px;
+    left: 20px;
+    padding-right: 20px;
+
+    
+}
+.napisskrol{
+    padding: 20px 55px 0px 20px;
+    color: black;
+    opacity: 1;
+    position: relative;
+    
+    
+}
+.tytulskrol{
+    font-size: 54px;
+    font-weight: bold;
+    
+}
+.podtyt{
+    font-size: 24px;
+ font-weight: bold;
+}
+.strzalkaskrol{
+    position: absolute;
+    background-image: url(strzalka.png);
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    right: 15px;
+    top: 168px;
+    cursor: pointer;
+    
+    
+    
+}
+
+
+.skrolcorobimy {
+    position: absolute;
+    top: 550px;
+    left: 20px;
+    height: 400px; 
+    width: 5400px;
+    
+}
+
+#opSk5 .napisskrol .podtyt {
+    font-size: 20px;
+    font-weight: bold;
+}
+

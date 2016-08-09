@@ -1,0 +1,56 @@
+.teksty{
+    display: non;
+}
+.kamel{
+	position:absolute;
+	
+    width: 843px;
+    height: 487px;
+    bottom: 0px;
+    left: -50px;
+	
+	}	
+
+.oko{
+    
+    width: 125px;
+    height: 125px;
+    position: absolute;
+    top: 46px;
+    left: 660px;
+    background-image: url(../images/strona1/kameleon1_atlas_.png);
+    background-repeat: no-repeat;
+    
+ 
+}
+.tablet {
+    background-image: url(../images/tablet.png);
+    width: 855px;
+    height: 657px;
+    position: absolute;
+    top:-100px;
+    left: 1000px;
+}
+
+.jezyk {
+    background-image: url(../images/jezyk.png);
+    width: 1369px;
+    height: 128px;
+    position: absolute;
+    top: 105px;
+    left: -570px;
+  
+}
+    
+        
+
+
+.tlokamela1 {
+    background-image: url(../images/strona1/kameleon.png);
+    
+ width:843px;
+    height: 487px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}

@@ -1,0 +1,123 @@
+@charset "UTF-8";
+/* CSS Document */
+.tlo_kontakt{
+	width: 100%;
+	height: 100%;
+    position: fixed;
+   top: 0px;
+    left: 0px;
+    visibility:hidden;
+  
+    
+   
+    
+	}
+.tytul_kontakt{
+	font-family: Industry;
+    font-weight: 900;
+	color: #08080a;
+	font-size: 125px;
+	position: absolute;
+	left: 48px;
+	top: -200px;
+    width: 1445px;
+    height: 122px;
+     
+    
+}
+.tytul_MM_kontakt{
+	font-family: Industry;
+    font-weight: 900;
+	color: #e30613;
+	font-size: 170px;
+	}
+
+.mapa_kontakt{
+    width: 100%;
+    height:100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.wizytowka_bold_kontakt{
+    font-weight: 800;
+	font-size: 30px;
+
+}
+
+
+
+.koperta{
+    width: 75px;
+    height: 75px;
+	background-image: url(../img_kontakt/koperta.png);
+	position: absolute;
+    left: 0px;
+   bottom: 0px;
+}
+.close_kontakt{
+    width: 75px;
+    height: 75px;
+	background-image: url(../img_kontakt/close.png);
+	position: absolute;
+    right: 2%;
+    top: 2%;
+}
+.tlo_kontakt a{
+ text-decoration: none;
+    color: white;
+    
+}
+.tlo_kontakt a:hover{
+
+    color: black
+    
+}
+.ramkaKK {
+  width: 291px;
+height: 118px;
+
+    left: 0px;
+   bottom: 0px;
+    color: white;
+	
+    background-color: #e30613;
+    position: absolute;
+    padding: 10px 20px;
+
+}
+
+.prostokat {
+    width: 25%;
+    height: 100%;
+    
+    background-size:cover;
+    float: left;
+    
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    position:relative;
+    font-family: Industry;
+    
+}
+
+.pro1 {
+    background-image: url(../img_kontakt/kon_t1.png);
+    top: 100%;
+ 
+}
+
+.pro0 {
+      background-image: url(../img_kontakt/kon_t0.png);
+    top: -100%;
+}
+
+.pro2 {
+      background-image: url(../img_kontakt/kon_t2.png);
+    top:-100%;
+}
+
+.pro3 {
+    top:100%;
+}

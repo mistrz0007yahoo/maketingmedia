@@ -1,0 +1,994 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+    margin: 0px;
+    overflow-x: hidden;
+    background-color: black;
+    font-family: Industry;
+    height: 1330px;
+    overflow-y: hidden;
+   
+}
+.strona1{
+	
+	width:1920px;
+	height:1080px;
+	top:0px;
+	left:0px;
+	background-color:black;
+    position:fixed;
+   
+	}
+.strona2{
+
+	
+	width:1920px;
+	height:1080px;
+	left:0px;
+	background-color: black;
+    position:relative;
+
+
+  
+ 
+    
+    
+	}
+.strona3{
+	position:relative;
+	width:1920px;
+	height:1080px;
+	
+	left:0px;
+	background-color: black;
+  
+	}
+.strona4{
+	position:relative;
+	width:1920px;
+	height:1080px;
+	
+	left:0px;
+	background-color: #b7b7b7;
+	}
+.strona5{
+	position:relative;
+	width:1920px;
+	height:1080px;
+	
+	left:0px;
+	background-color: black;
+	}
+.strona6{
+	position:relative;
+	width:1920px;
+	height:1080px;
+	left:0px;
+	background-color: black;
+	}
+	
+
+.tlo1 {
+	position:absolute;
+	width:1920px;
+	height:1080px;
+	top:0px;
+	left:0px;
+	background-color:black;
+	}
+
+.tlo2 {
+	position:absolute;
+	width:1920px;
+	height:1080px;
+	top:0px;
+	left:0px;
+	background-image: url(strona_mm_tp/img/MM_www_2016_warstwy_2_teksty_tp_0018_tlo2.png) ;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    
+	}
+.tlo3 {
+	position:absolute;
+	width:1920px;
+	height:1080px;
+	top:0px;
+	left:0px;
+	background-color:black;
+	}
+
+.tlo5 {
+	position:absolute;
+	width:1920px;
+	height:1080px;
+	top:0px;
+	left:0px;
+	background-image: url(strona_mm_tp/img/MM_www_2016_warstwy_3_teksty_tp_ksiezyc_0002_tlo5.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+	}
+.tlo6 {
+	position:absolute;
+	width:1920px;
+	height:1080px;
+	top:0px;
+	left:0px;
+	background-color: black;
+	}	
+.pasek{
+	position:absolute;
+	width:1920px;
+	height:540px;
+	top:0px;
+	left:0px;
+	background-image: url(strona_mm_tp/img/pasek.png);
+	}
+.igla1{
+	position:absolute;
+	width:92px;
+	height:1683px;
+	top:190px;
+	left:350px;
+	transform:rotate(3deg);
+	background-image: url(../images/strona3/igladuza.png);	
+      background-repeat: no-repeat;
+    background-size: 100% auto;
+	}
+.igla2{
+	position:absolute;
+	width:92px;
+	height:1683px;
+	top:190px;
+	left:1050px;
+	transform:rotate(-7deg);
+	background-image: url(../images/strona3/igladuza.png);
+      background-repeat: no-repeat;
+    background-size: 100% auto;
+	}
+.igla3{
+	position:absolute;
+	width:92px;
+	height:1683px;
+	top:190px;
+	left:1790px;
+	transform:rotate(-8deg);
+	background-image: url(../images/strona3/igladuza.png);
+      background-repeat: no-repeat;
+    background-size: 100% auto;
+	}
+.nic{
+	position:absolute;
+	width:1642px;
+	height:100px;
+	top:320px;
+	left:223px;
+	background-image: url(strona_mm_tp/img/MM_www_2016_warstwy_2_teksty_jacek_0001_nic.png) ;	
+      background-repeat: no-repeat;
+    background-size: 100% auto;
+	}
+	
+.palec{
+	position:absolute;
+	width:350px;
+	height:602px;
+	top:140px;
+	left:0px;
+	background-image: url(strona_mm_tp/img/MM_www_2016_warstwy_2_teksty_jacek_0002_palec1.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+	}	
+		
+.tlo_m {
+	position:absolute;
+	width: 1238px;
+	height: 938px;
+	top:0px;
+	left:628px;
+	background-image: url(strona_mm_tp/img/MM_www_2016_warstwy_2_teksty_tp_0003_tlo_menu.png);
+    background-repeat: no-repeat;
+    display: none;
+	}
+.logo_mm{
+	position:absolute;
+	width: 423px;
+	height: 66px;
+	top:40px;
+	left:198px;
+	background-image: url(strona_mm_tp/img/MM_www_2016_warstwy_2_teksty_tp_0004_logo-mm-dol.png);
+    opacity: 0;
+   
+	}
+.pasek1{
+	position:absolute;
+	width: 821px;
+	height: 137px;
+	top: 0px;
+	left:0px;
+  
+ 
+  
+
+	
+	}
+.pasek2{
+	position:absolute;
+	width: 821px;
+	height: 137px;
+	top: 0px;
+	left:1099px;
+	 
+   
+	}
+.str1{
+	position:absolute;
+	width: 276px;
+	height: 58px;
+	top: 5px;
+	left:820px;
+    background-repeat: no-repeat;
+	background-image: url(strona_mm_tp/img/MM_www_2016_warstwy_2_teksty_tp_0000_str_g.png);
+    background-position: 100px 20px;
+    cursor: pointer;
+    
+	}
+.str2{
+	position:absolute;
+	width: 276px;
+	height: 58px;
+	bottom: 5px;
+	left:820px;
+	background-image: url(strona_mm_tp/img/MM_www_2016_warstwy_2_teksty_tp_0001_str_d.png);
+           background-repeat: no-repeat;
+	
+    background-position: 100px 20px;
+    cursor: pointer;
+
+	}
+.pl{
+width: 75px;
+	height: 75px;
+    float: right;
+	margin-top: 33px;
+	margin-left: 15px;
+    margin-right: 15px;
+	background-image: url(strona_mm_tp/img/MM_www_2016_warstwy_2_teksty_tp_0006_pl.png);
+    position: relative;
+    background-color:darkgrey;
+	}
+.en{
+	width: 75px;
+	height: 75px;
+    float: right;
+	margin-top: 33px;
+	margin-left: 15px;
+    margin-right: 15px;
+	background-image: url(strona_mm_tp/img/MM_www_2016_warstwy_2_teksty_tp_0007_en.png);
+    position: relative;
+    opacity: 0.5;
+	}
+.de{
+	width: 75px;
+	height: 75px;
+    float: right;
+	margin-top: 33px;
+	margin-left: 15px;
+    margin-right: 15px;
+	background-image: url(strona_mm_tp/img/MM_www_2016_warstwy_2_teksty_tp_0008_de.png);
+    position: relative;
+        opacity: 0.5;
+	}
+.kontakt{
+	width: 75px;
+	height: 75px;
+    float: right;
+	margin-top: 33px;
+	margin-right: 30px;
+    margin-left: 15px;
+	background-image: url(strona_mm_tp/img/MM_www_2016_warstwy_2_teksty_tp_0009_kontakt.png);
+    position: relative;
+    cursor: pointer;
+	}
+.kompas{
+	position:absolute;
+	width: 279px;
+	height: 279px;
+	top: 440px;
+	left:1370px;
+	background-image: url(strona_mm_tp/img/MM_www_2016_warstwy_2_teksty_tp_0017_kompas.png);
+	}
+.tyt1{
+	position: absolute;
+    width: 1100px;
+    height: 169px;
+    font-family: Industry;
+    line-height: 41.342px;
+    color: rgb(255, 255, 255);
+    font-size: 196px;
+    top: 71px;
+    left: 41px;
+    font-weight: bold;
+    letter-spacing: -10px;
+	}
+.tyt2{
+	position: absolute;
+    width: 1752px;
+    height: 130px;
+    font-family: Industry;
+    font-size: 141px;
+	line-height: 41.342px;
+	color: rgb(255, 255, 255);
+    top: 71px;
+	left: 41px;
+    font-weight: bold;
+    letter-spacing: -10px;
+	}
+.tyt3{
+	position: absolute;
+    width: 1752px;
+    height: 130px;
+    font-family: Industry;
+    font-size: 141px;
+	line-height: 41.342px;
+	color: rgb(255, 255, 255);
+    top: 71px;
+    left: 41px;
+    font-weight: bold;
+    letter-spacing: -10px;
+	}
+.tyt4{
+	position: absolute;
+	width: 1307px;
+	height: 168px;
+	font-family: Industry;
+	line-height: 41.342px;
+	color: #ffffff;
+	font-size: 141px;
+	top: 71px;
+    left: 41px;
+    font-weight: bold;
+    letter-spacing: -10px;
+	}
+.tyt5{
+	position: absolute;
+	width: 1284px;
+	height: 136px;
+	font-family: Industry;
+	line-height: 41.342px;
+	color: #ffffff;
+	font-size: 151px;
+	top: 71px;
+    left: 610px;
+    font-weight: bold;
+    letter-spacing: -10px;
+	}
+.tyt6{
+	position: absolute;
+	width: 1329px;
+	height: 147px;
+	font-family: Industry;
+	line-height: 41.342px;
+	color: #ffffff;
+	font-size: 151px;
+	top: 71px;
+    left: 58px;
+    font-weight: bold;
+    letter-spacing: -10px;
+	}
+.ksiezyc{
+	position: absolute;
+	width: 465px;
+	height: 462px;
+	top: 31px;
+    left: 127px;
+	background-image:url(strona_mm_tp/img/MM_www_2016_warstwy_3_teksty_tp_ksiezyc_0001_ksiezyc.png);
+	}
+.czerwony {
+    color: #e30613;
+    font-size: 220px;
+	}
+.czerwony1 {
+    color: #e30613;
+    font-size: 41px;
+	}
+.czerwony2 {
+    color: #e30613;
+    font-size: 54px;
+	}
+.czerwony4 {
+    color: #e30613;
+    font-size: 220px;
+	}
+.czerwony5 {
+    color: #e30613;
+    font-size: 35px;
+	}
+.tekst1 {
+	position:absolute;
+	width: 1368px;
+	height: 186px;
+	font-family: Industry;
+	color: #ffffff;
+	font-size: 41px;
+	font-weight: 500;
+	line-height: 49px;
+	top:243px;
+	left:288px;
+	}
+.tekst2 {
+	position:absolute;
+	width: 1368px;
+	height: 186px;
+	font-family: Industry;
+	color: #040407;
+	font-size: 41px;
+	font-weight: 500;
+	line-height: 49px;
+	top:224px;
+	left:825px;
+	}
+.tekst3 {
+	position:absolute;
+	width: 485px;
+	height: 100px;
+	font-family: Industry;
+	color: #ffffff;
+	font-size: 36px;
+	font-weight: 500;
+	line-height: 49px;
+	top:200px;
+	left:504px;
+	}
+.tekst5 {
+	position:absolute;
+	width: 485px;
+	height: 600px;
+	font-family: Industry;
+	color: #ffffff;
+	font-size: 36px;
+	font-weight:500;
+	line-height:49px;
+	top:200px;
+	left:1230px;
+	}
+.tekst4 {
+	position:absolute;
+	width: 485px;
+	height: 600px;
+	font-family: Industry;
+	color: #e30613;
+	font-size: 36px;
+	font-weight: 500;
+	line-height: 49px;
+	top:420px;
+	left:654px;
+	}
+.tekst6 {
+	position:absolute;
+	width: 1685px;
+	height: 163px;
+	font-family: Industry;
+	color: #000000;
+	font-size: 35px;
+	font-weight: 500;
+	line-height: 49px;
+	top:206px;
+	left:66px;
+	}
+.tekst7 {
+	position:absolute;
+	width: 931px;
+	height: 46px;
+	font-family: Industry;
+	color: #ffffff;
+	font-size: 39px;
+	font-weight: 500;
+	line-height: 49px;
+	top:210px;
+	left:1130px;
+	}
+.tekst8 {
+	position:absolute;
+	width: 972px;
+	height: 66px;
+	font-family: Industry;
+	color: #ffffff;
+	font-size: 72px;
+	font-weight: 500;
+	line-height: 49px;
+	font-weight:bold;
+	top:210px;
+	left:886px;
+	}
+	
+.kap1{
+	position:absolute;
+	width: 508px;
+	height: 529px;
+	top: 483px;
+	left:6px;
+	background-image: url(strona_mm_tp/img/MM_www_2016_warstwy_3_teksty_tp_kapelusze_0003_kapel1.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+	}	
+.kap2{
+	position:absolute;
+	width: 1012px;
+	height: 635px;
+	top: 409px;
+	left:340px;
+	background-image: url(strona_mm_tp/img/MM_www_2016_warstwy_3_teksty_tp_kapelusze_0006_kapel4.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: none;
+
+	}	
+.kap3{
+	position:absolute;
+	width: 506px;
+	height: 484px;
+	top: 541px;
+	left:1106px;
+	background-image: url(strona_mm_tp/img/MM_www_2016_warstwy_3_teksty_tp_kapelusze_0004_kapel2.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+	}
+.kap4{
+	position:absolute;
+	width: 400px;
+	height: 475px;
+	top: 511px;
+	left:1520px;
+	background-image: url(strona_mm_tp/img/MM_www_2016_warstwy_3_teksty_tp_kapelusze_0005_kapel3.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+	}
+		
+.lat{
+	position:absolute;
+	width: 810px;
+	height: 235px;
+	font-family: Industry;
+	font-size: 40px;
+	font-weight: 500;
+	line-height: 49px;
+	color: #ffffff;
+	top:425px;
+	left:839px;
+	}
+.t1{
+	position:absolute;
+	width: 266px;
+	height: 46px;
+	font-family: Industry;
+	color: #ffffff;
+	font-size: 54px;
+	font-weight: bold;
+	top:182px;
+	left:200px;
+	letter-spacing: -3px;
+	}
+.t2{
+	position:absolute;
+	width: 704px;
+	height: 50px;
+	font-family: Industry;
+	color: #ffffff;
+	font-size: 54px;
+	font-weight: bold;
+	top:253px;
+	left:200px;
+	letter-spacing: -3px;
+	}
+.t3{
+	position:absolute;
+	width: 555px;
+	height: 50px;
+	font-family: Industry;
+	color: #ffffff;
+	font-size: 54px;
+	font-weight: bold;
+	top:326px;
+	left:200px;
+	letter-spacing: -3px;
+	}
+	
+.t4{
+	position:absolute;
+	width: 201px;
+	height: 49px;
+	font-family: Industry;
+	color: #ffffff;
+	font-size: 54px;
+	font-weight: bold;
+	top:401px;
+	left:200px;
+	letter-spacing: -3px;
+	}
+.t5{
+	position:absolute;
+	width: 411px;
+	height: 51px;
+	font-family: Industry;
+	color: #ffffff;
+	font-size: 54px;
+	font-weight: bold;
+	top:474px;
+	left:200px;
+	letter-spacing: -3px;
+	}
+.t6{
+	position:absolute;
+	width: 473px;
+	height: 49px;
+	font-family: Industry;
+	color: #ffffff;
+	font-size: 54px;
+	font-weight: bold;
+	top:549px;
+	left:200px;
+	letter-spacing: -3px;
+	}
+.t7{
+	position:absolute;
+	width: 446px;
+	height: 51px;
+	font-family: Industry;
+	color: #ffffff;
+	font-size: 54px;
+	font-weight: bold;
+	top:622px;
+	left:200px;
+	letter-spacing: -3px;
+	}
+.t8{
+	position:absolute;
+	width: 208px;
+	height: 41px;
+	font-family: Industry;
+	color: #ffffff;
+	font-size: 54px;
+	font-weight: bold;
+	top:698px;
+	left:200px;
+	letter-spacing: -3px;
+	}
+.loga{
+	position:absolute;
+	width: 4794px;
+	height:1080px;
+	top:500px;
+	left:0px;
+	}
+.amgen{
+	position:absolute;
+	width: 347px;
+	height: 128px;
+	top:43px;
+	left:2px;
+	background-image:url(strona_mm_tp/img/loga_0000_amgen.png);  
+	}
+.aspen{
+	position:absolute;
+	width: 308px;
+	height: 97px;
+	top:43px;
+	left:592px;
+	background-image: url(strona_mm_tp/img/loga_0001_aspen.png);  
+	}
+.siroscan{
+	position:absolute;
+	width: 404px;
+	height: 70px;
+	top:-130px;
+	left:739px;
+	background-image: url(strona_mm_tp/img/loga_0002_siroscan.png);  
+	}
+.urlich{
+	position:absolute;
+	width:228px;
+	height:37px;
+	top:-130px;
+	left:1431px;
+	background-image: url(strona_mm_tp/img/loga_0006_ulrich.png);  
+	}
+.berlin{
+	position:absolute;
+	width: 499px;
+	height: 77px;
+	top:43px;
+	left:1172px;
+	background-image: url(strona_mm_tp/img/loga_0005_berlin.png);  
+	}
+.ewo{
+	position:absolute;
+	width: 124px;
+	height: 120px;
+	top:260px;
+	left:969px;
+	background-image: url(strona_mm_tp/img/loga_0003_ewo.png);  
+	}
+.convatec{
+	position:absolute;
+	width: 232px;
+	height: 88px;
+	top:270px;
+	left:1445px;
+	background-image: url(strona_mm_tp/img/loga_0004_Convatec.png);  
+	}
+.hasco{
+	position:absolute;
+	width:133px;
+	height:129px;
+	top:-170px;
+	left:1866px;
+	background-image: url(strona_mm_tp/img/loga_0007_hasco.png);  
+	}
+.novartis{
+	position:absolute;
+	width: 222px;
+	height: 35px;
+	top:-130px;
+	left:2179px;
+	background-image: url(strona_mm_tp/img/loga_0010_novartis.png);  
+	}
+.adamed{
+	position:absolute;
+	width:248px;
+	height:125px;
+	top:20px;
+	left:1900px;
+	background-image: url(strona_mm_tp/img/loga_0008_adamed.png);  
+	}
+.syngenta{
+	position:absolute;
+	width: 206px;
+	height: 58px;
+	top:289px;
+	left:1885px;
+	background-image: url(strona_mm_tp/img/loga_0009_syngenta.png);  
+	}
+.bayer{
+	position:absolute;
+	width: 358px;
+	height: 66px;
+	top:280px;
+	left:2253px;
+	background-image: url(strona_mm_tp/img/loga_0011_bayer.png);  
+	}
+.roche{
+	position:absolute;
+	width:256px;
+	height:138px;
+	top:20px;
+	left:2402px;
+	background-image: url(strona_mm_tp/img/loga_0012_roche.png);  
+	}
+.abbvie{
+	position:absolute;
+	width: 203px;
+	height: 35px;
+	top:-130px;
+	left:2637px;
+	background-image: url(strona_mm_tp/img/loga_0014_abbvie.png);  
+	}
+.aventis{
+	position:absolute;
+	width: 206px;
+	height: 110px;
+	top:-170px;
+	left:3075px;
+	background-image: url(strona_mm_tp/img/loga_0015_aventis.png);  
+	}
+.az{
+	position:absolute;
+	width: 412px;
+	height: 98px;
+	top:20px;
+	left:2852px;
+	background-image: url(strona_mm_tp/img/loga_0016_az.png) ;  
+	}
+.teva{
+	position:absolute;
+	width:130px;
+	height:127px;
+	top:250px;
+	left:2703px;
+	background-image: url(strona_mm_tp/img/loga_0013_teva.png);  
+	}
+.dove{
+	position:absolute;
+	width:179px;
+	height:121px;
+	top:250px;
+	left:2953px;
+	background-image: url(strona_mm_tp/img/loga_0017_dove.png);  
+	}
+.wsip{
+	position:absolute;
+	width:126px;
+	height:152px;
+	top:235px;
+	left:3267px;
+	background-image: url(strona_mm_tp/img/loga_0018_wsip.png);  
+	}
+.egis{
+	position:absolute;
+	width:171px;
+	height:86px;
+	top:255px;
+	left:3529px;
+	background-image: url(strona_mm_tp/img/loga_0021_egis.png);  
+	}
+.servier{
+	position:absolute;
+	width:281px;
+	height:119px;
+	top:20px;
+	left:3414px;
+	background-image: url(strona_mm_tp/img/loga_0020_servier.png);  
+	}
+.bioton{
+	position:absolute;
+	width: 187px;
+	height: 86px;
+	top:-160px;
+	left:3439px;
+	background-image: url(strona_mm_tp/img/loga_0019_bioton.png);  
+	}
+.soudal{
+	position:absolute;
+	width: 182px;
+	height: 72px;
+	top:-150px;
+	left:3828px;
+	background-image: url(strona_mm_tp/img/loga_0022_soudal.png);  
+	}
+.steifel{
+	position:absolute;
+	width:315px;
+	height:119px;
+	top:20px;
+	left:3990px;
+	background-image: url(strona_mm_tp/img/loga_0024_steifel.png);  
+	}
+.symphar{
+	position:absolute;
+	width: 180px;
+	height: 122px;
+	top:250px;
+	left:3877px;
+	background-image: url(strona_mm_tp/img/loga_0023_symphar.png);  
+	}
+.lekam{
+	position:absolute;
+	width: 157px;
+	height: 76px;
+	top:-160px;
+	left:4185px;
+	background-image: url(strona_mm_tp/img/loga_0025_lekam.png);  
+	}
+.zoetis{
+	position:absolute;
+	width: 188px;
+	height: 59px;
+	top:-140px;
+	left:4505px;
+	background-image: url(strona_mm_tp/img/loga_0026_zoetis.png);  
+	}
+.nn{
+	position:absolute;
+	width:255px;
+	height:179px;
+	top:-20px;
+	left:4470px;
+	background-image: url(strona_mm_tp/img/loga_0027_nn.png);  
+	}
+.stronka{
+   
+    overflow-x: hidden;
+    position: fixed;
+    display: none;
+   
+
+
+
+}
+.aktywna{
+   
+    display: block;
+   
+   
+}
+
+.srodekczarny {
+    width: 278px;
+    height: 137px;
+    background-color: black;
+    position: absolute;
+    left: 821px;
+    
+}
+.dolnyobiekt{
+   
+}
+
+.zaslonaigly {
+    position:absolute;
+	width:92px;
+	height:1683px;
+    background-repeat: no-repeat;
+    background-position: 0px 94px;
+	
+	background-image: url(../images/strona3/zaslonaigly.png);
+      background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+#zaI1 {
+   	top:190px;
+	left:350px;
+	transform:rotate(3deg);
+}
+
+#zaI2 {
+    top:190px;
+	left:1050px;
+	transform:rotate(-7deg);
+}
+
+#zaI3 {
+    	top:190px;
+	left:1790px;
+	transform:rotate(-8deg);
+}
+
+.kapelusze {
+  
+}
+
+.loga2 {
+    position:absolute;
+	width: 4794px;
+	height:1080px;
+	top:500px;
+	left:1900px;
+   
+}
+
+.ladowanieLogo {
+    position:fixed;
+    width: 1920px;
+    height: 460px;
+    top: -10px;
+    height: 0px;
+    left: 0px;
+}
+
+#Warstwa_1 {
+    visibility: hidden;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    width: 1920px;
+    height: 460px;
+   
+}
+
+.tlopaska1 {
+position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    top: 0px;
+    left: 0px;
+   
+}
+
+.tlopaska2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #c0c0c1;
+    top: 0px;
+    left: 0px;
+}
