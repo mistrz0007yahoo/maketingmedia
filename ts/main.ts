@@ -153,15 +153,31 @@ $(".str1").mousedown(function(e){
     
     animjezyka = new TimelineLite();
     
-    var animJ1a = TweenLite.to($(".tablet"), 0, {rotationY:90,x:600});
+    
+var animJ1a;
+    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+  TweenMax.set($(".tablet"), {transformPerspective:1000});
+    TweenLite.to($(".tablet"), 0, {x:-500,alpha:0});
+         animJ1a = TweenLite.to($(".tablet"), 0, {alpha:0,rotationY:-65,x:600});
+    }
+else{
+    TweenLite.to($(".tablet"), 0, {x:-500});
+     animJ1a = TweenLite.to($(".tablet"), 0, {alpha:0,rotationY:-90,x:600});
+    
+}
+  
+
     var animJ1 = TweenLite.to($(".jezyk"), 1, {x:1230,ease:Cubic.easeInOut,rotation:-4});
-         var animJ2 = TweenLite.to($(".jezyk"), 1, {x:630,ease:Sine.easeInOut,rotation:0});
-         var animJ3 = TweenLite.to($(".tablet"), 1, {x:0,ease:Sine.easeInOut,rotationY:0});
+    var animJ3 = TweenLite.to($(".tablet"), 1, {x:0,alpha:1,ease:Sine.easeInOut,rotationY:0});
+    var animJ2 = TweenLite.to($(".jezyk"), 1, {x:630,ease:Sine.easeInOut,rotation:0});
+    
+
+        
        animjezyka.add(animJ1a);
         animjezyka.add(animJ1);
-       animjezyka.add(animJ2);
-        animjezyka.add(animJ3,"-=1");
-    
+       animjezyka.add(animJ3);
+        animjezyka.add(animJ2,"-=1");
+
     aktywujListener();
     menU.pokazMenu();
 }

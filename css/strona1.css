@@ -8,6 +8,10 @@
     height: 487px;
     bottom: 0px;
     left: -50px;
+    transform: translateZ(1000px);
+transform-style: preserve-3d;
+    
+
 	
 	}	
 
@@ -30,6 +34,9 @@
     position: absolute;
     top:-100px;
     left: 1000px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    
 }
 
 .jezyk {
@@ -39,6 +46,7 @@
     position: absolute;
     top: 105px;
     left: -570px;
+      perspective: 1000px;
   
 }
     
